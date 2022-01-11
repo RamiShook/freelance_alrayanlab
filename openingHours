@@ -1,0 +1,9 @@
+// Opening Hours Is Found In ABout Footer (Kenet Madrube)
+<div class="col-lg-6">
+                  <ul class="top-right">
+                     <li>
+                        <i class="las la-clock"></i>
+                        Opening Hour: 9:00 am - 9:00 pm
+                     </li>
+                  </ul>
+               </div>

@@ -1,0 +1,26 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteRule ^post/(.*)/([0-9]+)/$ blog-details.php?post_id=$2&slug=$1
+RewriteRule ^post/(.*)/([0-9]+)$ blog-details.php?post_id=$2&slug=$1
+
+
+
+RewriteRule ^blogs/([0-9]+)/ blog.php?page=$1
+RewriteRule ^blogs/([0-9]+) blog.php?page=$1
+
+
+RewriteRule "^home/$" "index.php" [L]
+RewriteRule "^about/$" "about.php" [L]
+RewriteRule "^blogs/" "blog.php" [L]
+RewriteRule "^contact/$" "contact.php" [L]
+RewriteRule "^pricing/$" "pricing.php" [L]
+RewriteRule "^services/$" "services.php" [L]
+
+
+RewriteRule "^home$" "index.php" [L]
+RewriteRule "^about$" "about.php" [L]
+RewriteRule "^blogs" "blog.php" [L]
+RewriteRule "^contact$" "contact.php" [L]
+RewriteRule "^pricing$" "pricing.php" [L]
+RewriteRule "^services$" "services.php" [L]
